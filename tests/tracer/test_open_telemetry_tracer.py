@@ -17,7 +17,7 @@ from opentelemetry.sdk.trace.export import (
 )
 from pytest import fixture
 
-from intelligence_layer.core import OpenTelemetryTracer, SpanType, Task
+from core import OpenTelemetryTracer, SpanType, Task
 
 
 class DummyExporter(SpanExporter):

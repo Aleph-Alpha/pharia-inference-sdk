@@ -4,9 +4,9 @@ from typing import NewType
 from aleph_alpha_client import Prompt, Text
 from pydantic import BaseModel
 
-from intelligence_layer.core.model import AlephAlphaModel
-from intelligence_layer.core.task import Task, Token
-from intelligence_layer.core.tracer.tracer import TaskSpan
+from core.model import AlephAlphaModel
+from core.task import Task, Token
+from core.tracer.tracer import TaskSpan
 
 LogProb = NewType("LogProb", float)
 
@@ -52,7 +52,7 @@ class Echo(Task[EchoInput, EchoOutput]):
 
     Example:
         >>> from aleph_alpha_client import Prompt
-        >>> from intelligence_layer.core import Echo, EchoInput, InMemoryTracer, LuminousControlModel
+        >>> from core import Echo, EchoInput, InMemoryTracer, LuminousControlModel
 
         >>> model = LuminousControlModel(name="luminous-base-control")
         >>> task = Echo(model)

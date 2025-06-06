@@ -1,7 +1,7 @@
 import pytest
 
-from intelligence_layer.core import CompositeTracer, InMemoryTracer, SpanStatus, Task
-from tests.core.tracer.conftest import SpecificTestException
+from core import CompositeTracer, InMemoryTracer, SpanStatus, Task
+from tests.tracer.conftest import SpecificTestException
 
 
 def test_composite_tracer(tracer_test_task: Task[str, str]) -> None:

@@ -5,7 +5,7 @@ from collections.abc import Iterator
 
 import pytest
 
-from intelligence_layer.core import (
+from core import (
     ErrorValue,
     InMemorySpan,
     InMemoryTaskSpan,

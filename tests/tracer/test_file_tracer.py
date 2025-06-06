@@ -4,13 +4,13 @@ from unittest.mock import Mock
 import pytest
 from pytest import fixture
 
-from intelligence_layer.core import (
+from core.task import Task
+from core.tracer import (
     FileTracer,
     InMemoryTaskSpan,
-    Task,
     TracerLogEntryFailed,
 )
-from tests.core.tracer.conftest import SpecificTestException
+from tests.tracer.conftest import SpecificTestException
 
 
 @fixture

@@ -4,7 +4,7 @@ import pytest
 from pydantic import BaseModel
 from pytest import fixture
 
-from intelligence_layer.core import (
+from core.tracer import (
     CompositeTracer,
     FileTracer,
     InMemoryTracer,
@@ -14,7 +14,7 @@ from intelligence_layer.core import (
     Tracer,
     utc_now,
 )
-from tests.core.tracer.conftest import SpecificTestException
+from tests.tracer.conftest import SpecificTestException
 
 
 class DummyObject(BaseModel):

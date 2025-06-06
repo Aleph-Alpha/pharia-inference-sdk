@@ -1,0 +1,60 @@
+[project]
+name = "core-sdk"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Max Hammer",email = "max.hammer@aleph-alpha.com"}
+]
+readme = "README.md"
+
+[project.urls]
+repository = "https://github.com/aleph-alpha/core-sdk"
+
+[tool.setuptools]
+packages = [
+    { include = "core" }
+]
+
+[tool.poetry]
+name = "core-sdk"
+version = "0.1.0"
+description = ""
+authors = [
+    "Max Hammer <max.hammer@aleph-alpha.com>"
+]
+readme = "README.md"
+packages = [
+    { include = "core" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+pydantic = ">=2.0.0"
+aleph-alpha-client = ">=10.2.2,<11.0.0"
+semantic-text-splitter = ">=0.5.0"
+lingua-language-detector = ">=2.0.0"
+python-liquid = "1.9.4"
+pycountry = "^24.6.1"
+rich = "^14.0.0"
+opentelemetry-api = "^1.29.0"
+opentelemetry-sdk = "^1.29.0"
+opentelemetry-exporter-otlp-proto-http = "1.29.0"
+python-dotenv = "^1.1.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = ">=8.3"
+pytest-xdist = ">=3.6.1"
+pytest-asyncio = ">=0.26.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+verbosity_assertions = 1
+markers = [
+    "internal: marks tests as internal (deselect with '-k \"not internal\"')",
+    "docker: the test depends on having a docker container running.",
+]
+addopts = "--capture=tee-sys"
+asyncio_mode = "auto"

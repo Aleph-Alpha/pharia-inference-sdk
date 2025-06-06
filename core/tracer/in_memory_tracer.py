@@ -8,7 +8,7 @@ from rich.panel import Panel
 from rich.syntax import Syntax
 from rich.tree import Tree
 
-from intelligence_layer.core.tracer.tracer import (
+from core.tracer.tracer import (
     Context,
     Event,
     ExportedSpan,

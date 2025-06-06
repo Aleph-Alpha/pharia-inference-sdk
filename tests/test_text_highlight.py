@@ -10,7 +10,7 @@ from aleph_alpha_client import (
 )
 from pytest import fixture, raises
 
-from intelligence_layer.core import (
+from core import (
     AlephAlphaModel,
     ControlModel,
     ExplainInput,

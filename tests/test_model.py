@@ -12,8 +12,8 @@ from aleph_alpha_client import (
 )
 from pytest import fixture
 
-from intelligence_layer.connectors import AlephAlphaClientProtocol
-from intelligence_layer.core import (
+from connectors.limited_concurrency_client import AlephAlphaClientProtocol
+from core import (
     AlephAlphaModel,
     CompleteInput,
     ControlModel,
@@ -25,8 +25,8 @@ from intelligence_layer.core import (
     NoOpTracer,
     Pharia1ChatModel,
 )
-from intelligence_layer.core.model import _cached_context_size, _cached_tokenizer
-from intelligence_layer.core.prompt_template import PromptRange, PromptTemplate
+from core.model import _cached_context_size, _cached_tokenizer
+from core.prompt_template import PromptRange, PromptTemplate
 
 INSTRUCTION = "Who likes pizza?"
 INPUT = "Marc and Jessica had pizza together. However, Marc hated it. He only agreed to the date because Jessica likes pizza so much."

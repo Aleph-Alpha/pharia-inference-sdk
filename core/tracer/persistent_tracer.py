@@ -6,13 +6,13 @@ from uuid import UUID, uuid4
 
 from pydantic import BaseModel, SerializeAsAny
 
-from intelligence_layer.core.tracer.in_memory_tracer import (
+from core.tracer.in_memory_tracer import (
     InMemorySpan,
     InMemoryTaskSpan,
     InMemoryTracer,
     LogEntry,
 )
-from intelligence_layer.core.tracer.tracer import (
+from core.tracer.tracer import (
     Context,
     ExportedSpan,
     PydanticSerializable,

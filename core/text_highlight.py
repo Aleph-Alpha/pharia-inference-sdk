@@ -11,15 +11,15 @@ from aleph_alpha_client import (
 )
 from pydantic import BaseModel
 
-from intelligence_layer.core.model import AlephAlphaModel, ExplainInput, ExplainOutput
-from intelligence_layer.core.prompt_template import (
+from core.model import AlephAlphaModel, ExplainInput, ExplainOutput
+from core.prompt_template import (
     Cursor,
     PromptRange,
     RichPrompt,
     TextCursor,
 )
-from intelligence_layer.core.task import Task
-from intelligence_layer.core.tracer.tracer import TaskSpan
+from core.task import Task
+from core.tracer.tracer import TaskSpan
 
 
 class TextHighlightInput(BaseModel):
@@ -84,7 +84,7 @@ class TextHighlight(Task[TextHighlightInput, TextHighlightOutput]):
     Example:
         >>> import os
 
-        >>> from intelligence_layer.core import (
+        >>> from core import (
         ... 	InMemoryTracer,
         ... 	PromptTemplate,
         ... 	TextHighlight,

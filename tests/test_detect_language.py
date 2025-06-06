@@ -1,7 +1,7 @@
 import pytest
 from lingua import Language as LinguaLanguage
 
-from intelligence_layer.core import (
+from core import (
     DetectLanguage,
     DetectLanguageInput,
     Language,

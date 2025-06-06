@@ -6,14 +6,14 @@ from uuid import UUID
 
 from pydantic import BaseModel
 
-from intelligence_layer.core.tracer.in_memory_tracer import InMemoryTracer
-from intelligence_layer.core.tracer.persistent_tracer import (
+from core.tracer.in_memory_tracer import InMemoryTracer
+from core.tracer.persistent_tracer import (
     LogLine,
     PersistentSpan,
     PersistentTaskSpan,
     PersistentTracer,
 )
-from intelligence_layer.core.tracer.tracer import Context, PydanticSerializable
+from core.tracer.tracer import Context, PydanticSerializable
 
 
 class FileTracer(PersistentTracer):

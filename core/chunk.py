@@ -4,9 +4,9 @@ from typing import NewType
 from pydantic import BaseModel
 from semantic_text_splitter import TextSplitter
 
-from intelligence_layer.core.model import AlephAlphaModel
-from intelligence_layer.core.task import Task
-from intelligence_layer.core.tracer.tracer import TaskSpan
+from core.model import AlephAlphaModel
+from core.task import Task
+from core.tracer.tracer import TaskSpan
 
 TextChunk = NewType("TextChunk", str)
 """Segment of a larger text.

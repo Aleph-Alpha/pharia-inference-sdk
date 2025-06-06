@@ -20,17 +20,17 @@ from aleph_alpha_client import (
 from pydantic import BaseModel, ConfigDict
 from tokenizers import Encoding, Tokenizer  # type: ignore
 
-from intelligence_layer.connectors.limited_concurrency_client import (
+from connectors.limited_concurrency_client import (
     AlephAlphaClientProtocol,
     LimitedConcurrencyClient,
 )
-from intelligence_layer.core.prompt_template import (
+from core.prompt_template import (
     PromptTemplate,
     RichPrompt,
     TextCursor,
 )
-from intelligence_layer.core.task import Task, Token
-from intelligence_layer.core.tracer.tracer import TaskSpan, Tracer
+from core.task import Task, Token
+from core.tracer.tracer import TaskSpan, Tracer
 
 
 class CompleteInput(BaseModel, CompletionRequest, frozen=True):

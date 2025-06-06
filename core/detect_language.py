@@ -7,8 +7,8 @@ from lingua import Language as LinguaLanguage
 from pycountry import languages
 from pydantic import BaseModel
 
-from intelligence_layer.core.task import Task
-from intelligence_layer.core.tracer.tracer import TaskSpan
+from core.task import Task
+from core.tracer.tracer import TaskSpan
 
 
 class LanguageNotSupportedError(ValueError):
@@ -82,7 +82,7 @@ class DetectLanguage(Task[DetectLanguageInput, DetectLanguageOutput]):
             the `best_fit`.
 
     Example:
-        >>> from intelligence_layer.core import (
+        >>> from core import (
         ...     DetectLanguage,
         ...     DetectLanguageInput,
         ...     InMemoryTracer,

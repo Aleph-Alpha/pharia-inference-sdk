@@ -6,12 +6,12 @@ from aleph_alpha_client import CompletionResponse, Prompt, Text, Tokens
 from aleph_alpha_client.completion import CompletionResult
 from pytest import fixture
 
-from intelligence_layer.connectors.limited_concurrency_client import (
+from connectors.limited_concurrency_client import (
     AlephAlphaClientProtocol,
 )
-from intelligence_layer.core import MAX_CONCURRENCY, NoOpTracer, Task, TaskSpan, Token
-from intelligence_layer.core.echo import Echo, EchoInput, TokenWithLogProb
-from intelligence_layer.core.model import (
+from core import MAX_CONCURRENCY, NoOpTracer, Task, TaskSpan, Token
+from core.echo import Echo, EchoInput, TokenWithLogProb
+from core.model import (
     AlephAlphaModel,
     CompleteInput,
     CompleteOutput,

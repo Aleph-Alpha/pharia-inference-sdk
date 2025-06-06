@@ -39,7 +39,7 @@ class TextCursor:
 
     Example:
     >>> from aleph_alpha_client import Prompt
-    >>> from intelligence_layer.core import TextCursor
+    >>> from core import TextCursor
     >>> prompt = Prompt.from_text("This is a text")
     >>> # This denotes the "i" in "is" in the text-item of the `Prompt` above
     >>> cursor = TextCursor(item=0, position=5)
@@ -173,7 +173,7 @@ class PromptTemplate:
     Example:
         >>> from aleph_alpha_client import CompletionRequest, Tokens
 
-        >>> from intelligence_layer.core import PromptTemplate
+        >>> from core import PromptTemplate
 
         >>> tokens = Tokens.from_token_ids([1, 2, 3])
         >>> template = PromptTemplate(
@@ -198,7 +198,7 @@ class PromptTemplate:
             template_str: the liquid template string
 
         Example:
-            >>> from intelligence_layer.core import PromptTemplate
+            >>> from core import PromptTemplate
 
 
             >>> template = PromptTemplate(
@@ -254,7 +254,7 @@ class PromptTemplate:
         Example:
             >>> from aleph_alpha_client import Prompt, Text, Tokens
 
-            >>> from intelligence_layer.core import PromptTemplate
+            >>> from core import PromptTemplate
 
             >>> user_prompt = Prompt([
             ... Tokens.from_token_ids([1, 2, 3]),

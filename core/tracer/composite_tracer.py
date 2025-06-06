@@ -2,7 +2,7 @@ from collections.abc import Sequence
 from datetime import datetime
 from typing import Generic, Optional, TypeVar
 
-from intelligence_layer.core.tracer.tracer import (
+from core.tracer.tracer import (
     Context,
     ExportedSpan,
     PydanticSerializable,
@@ -27,8 +27,8 @@ class CompositeTracer(Tracer, Generic[TracerVar]):
         tracers: tracers that will be forwarded all subsequent log and span calls.
 
     Example:
-        >>> from intelligence_layer.core import InMemoryTracer, FileTracer, CompositeTracer, TextChunk
-        >>> from intelligence_layer.examples import PromptBasedClassify, ClassifyInput
+        >>> from core import InMemoryTracer, FileTracer, CompositeTracer, TextChunk
+        >>> from examples import PromptBasedClassify, ClassifyInput
 
         >>> tracer_1 = InMemoryTracer()
         >>> tracer_2 = InMemoryTracer()

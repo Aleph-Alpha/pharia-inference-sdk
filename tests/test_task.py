@@ -4,7 +4,7 @@ from functools import wraps
 from threading import Lock
 from time import sleep
 
-from intelligence_layer.core import (
+from core import (
     MAX_CONCURRENCY,
     InMemoryTracer,
     NoOpTracer,

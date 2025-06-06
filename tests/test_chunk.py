@@ -1,6 +1,6 @@
 from pytest import fixture
 
-from intelligence_layer.core import (
+from core import (
     ChunkInput,
     ChunkWithIndices,
     Llama3InstructModel,
