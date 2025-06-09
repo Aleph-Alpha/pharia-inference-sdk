@@ -24,7 +24,7 @@ uv run pytest
 
 
 ## TODO list
-- [ ] Add ruff linting
+- [x] Add ruff linting
 - [ ] Add build step 
 - [ ] add docs
 - [ ] Figure out what to do with `LimitedConcurrencyClient`
