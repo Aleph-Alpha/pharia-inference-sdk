@@ -20,7 +20,7 @@ dependencies = [
 ]
 
 [project.urls]
-repository = "https://github.com/aleph-alpha/core-sdk"
+repository = "https://github.com/Aleph-Alpha/core-sdk.git"
 
 [dependency-groups]
 test = [
