@@ -1,5 +1,4 @@
 import os
-from collections.abc import Sequence
 from os import getenv
 from pathlib import Path
 from typing import cast
@@ -8,15 +7,17 @@ from aleph_alpha_client import Client, Image
 from dotenv import load_dotenv
 from pytest import fixture
 
-
-from connectors.limited_concurrency_client import AlephAlphaClientProtocol, LimitedConcurrencyClient
+from connectors.limited_concurrency_client import (
+    AlephAlphaClientProtocol,
+    LimitedConcurrencyClient,
+)
 from core import (
     Llama3InstructModel,
     LuminousControlModel,
     NoOpTracer,
     Pharia1ChatModel,
-    utc_now,
 )
+
 
 @fixture(scope="session")
 def token() -> str:

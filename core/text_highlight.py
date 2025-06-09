@@ -160,7 +160,7 @@ class TextHighlight(Task[TextHighlightInput, TextHighlightOutput]):
         # the last item is always the question
         if n_items > 2:
             raise ValueError(
-                f"Text highlighting currently only works correctly with a single Text item. Found {n_items-1}."
+                f"Text highlighting currently only works correctly with a single Text item. Found {n_items - 1}."
             )
         if any(not isinstance(item, Text) for item in input.rich_prompt.items):
             raise ValueError("Text highlighting only supports text prompts.")
