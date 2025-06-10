@@ -94,7 +94,7 @@ class OpenTelemetrySpan(Span, OpenTelemetryTracer):
         self.open_ts_span.set_status(
             StatusCode.OK if self.status_code == SpanStatus.OK else StatusCode.ERROR
         )
-        detach(self._token)
+        detach(self._token)  # type: ignore
         self.open_ts_span.end(
             _open_telemetry_timestamp(timestamp) if timestamp is not None else None
         )
