@@ -1,33 +1,19 @@
 # Core SDK
+
 Formally the `intelligence_layer/core` package.
 
-## Requirements
-- [uv](https://docs.astral.sh/uv/)
-- Python 3.12
+## Overview
 
-## Setup
+The Core SDK provides essential functionality for the intelligence layer. TBD
 
+## Installation
+The SDK is published on [PyPI](#).
+
+To add the SDK as a dependency to an existing project managed, run
 ```bash
-uv venv
-uv sync
+pip install core-sdk
 ```
 
-## Run tests
+## Contributing
 
-```bash
-# make sure jaeger is running
-docker compose up -d
-
-# run tests
-uv run pytest
-```
-
-
-## TODO list
-- [x] Add ruff linting
-- [ ] Add build step 
-- [ ] add docs
-- [ ] Figure out what to do with `LimitedConcurrencyClient`
-- [ ] setup renovatebot 
-- [ ] setup CI/CD 
-   - [ ] Add release-please 
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details on how to set up the development environment and submit changes.
