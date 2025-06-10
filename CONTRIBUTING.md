@@ -1,4 +1,4 @@
-# Contributing to Core SDK
+# Contributing to pharia-inference-sdk
 
 ## Development Setup
 

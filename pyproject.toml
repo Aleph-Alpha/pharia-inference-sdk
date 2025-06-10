@@ -1,5 +1,5 @@
 [project]
-name = "core-sdk"
+name = "pharia-inference-sdk"
 version = "0.1.0"
 description = ""
 authors = [{ name = "Max Hammer", email = "max.hammer@aleph-alpha.com" }]
@@ -20,7 +20,7 @@ dependencies = [
 ]
 
 [project.urls]
-repository = "https://github.com/Aleph-Alpha/core-sdk.git"
+repository = "https://github.com/Aleph-Alpha/pharia-inference-sdk.git"
 
 [dependency-groups]
 test = [
