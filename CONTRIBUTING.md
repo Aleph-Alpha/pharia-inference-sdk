@@ -27,9 +27,9 @@ uv run pytest
 ## Development Roadmap
 
 ### TODO
-- [ ] Add build step 
+- [ ] Add build step (package and publish)
 - [ ] add docs
-- [ ] Figure out what to do with `LimitedConcurrencyClient`
+- [x] Figure out what to do with `LimitedConcurrencyClient`
 - [ ] setup renovatebot 
 - [ ] setup CI/CD 
    - [ ] Add release-please 
