@@ -4,7 +4,7 @@ from functools import wraps
 from threading import Lock
 from time import sleep
 
-from core import (
+from pharia_inference_sdk.core import (
     MAX_CONCURRENCY,
     InMemoryTracer,
     NoOpTracer,

@@ -1,6 +1,6 @@
 from pytest import fixture
 
-from core import (
+from pharia_inference_sdk.core import (
     ChunkInput,
     ChunkWithIndices,
     Llama3InstructModel,

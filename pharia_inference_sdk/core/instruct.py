@@ -2,9 +2,9 @@ from typing import Optional
 
 from pydantic import BaseModel
 
-from core.model import CompleteInput, CompleteOutput, ControlModel
-from core.task import Task
-from core.tracer.tracer import TaskSpan
+from pharia_inference_sdk.core.model import CompleteInput, CompleteOutput, ControlModel
+from pharia_inference_sdk.core.task import Task
+from pharia_inference_sdk.core.tracer.tracer import TaskSpan
 
 
 class InstructInput(BaseModel):

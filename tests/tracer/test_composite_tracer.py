@@ -1,6 +1,6 @@
 import pytest
 
-from core import CompositeTracer, InMemoryTracer, SpanStatus, Task
+from pharia_inference_sdk.core import CompositeTracer, InMemoryTracer, SpanStatus, Task
 from tests.tracer.conftest import SpecificTestException
 
 

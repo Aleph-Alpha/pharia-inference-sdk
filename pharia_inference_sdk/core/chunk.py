@@ -4,9 +4,9 @@ from typing import NewType
 from pydantic import BaseModel
 from semantic_text_splitter import TextSplitter
 
-from core.model import AlephAlphaModel
-from core.task import Task
-from core.tracer.tracer import TaskSpan
+from pharia_inference_sdk.core.model import AlephAlphaModel
+from pharia_inference_sdk.core.task import Task
+from pharia_inference_sdk.core.tracer.tracer import TaskSpan
 
 TextChunk = NewType("TextChunk", str)
 """Segment of a larger text.

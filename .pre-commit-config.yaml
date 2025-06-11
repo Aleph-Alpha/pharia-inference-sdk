@@ -15,7 +15,7 @@ repos:
         args: [] # optional: list of Conventional Commits types to allow
   - repo: https://github.com/astral-sh/ruff-pre-commit
     # Ruff version.
-    rev: v0.7.3
+    rev: v0.11.13
     hooks:
       # Run the linter.
       - id: ruff
@@ -46,7 +46,3 @@ repos:
             "newyorker,te,responde,ist,als,oder,technik,sie,rouge,unter,juli,fiel,couldn,mke, vor,fille,ans",
           ]
         exclude: '^(poetry\.lock|tests/.*|src/intelligence_layer/examples/qa/multiple_chunk_qa.py|src/intelligence_layer/examples/summarize/.*|src/intelligence_layer/examples/classify/keyword_extract.py|src/intelligence_layer/learning/enrich.py)$'
-  - repo: https://github.com/jsh9/pydoclint
-    rev: 0.5.9
-    hooks:
-      - id: pydoclint

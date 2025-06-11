@@ -7,11 +7,11 @@ from aleph_alpha_client import Client, Image
 from dotenv import load_dotenv
 from pytest import fixture
 
-from connectors.limited_concurrency_client import (
+from pharia_inference_sdk.connectors.limited_concurrency_client import (
     AlephAlphaClientProtocol,
     LimitedConcurrencyClient,
 )
-from core import (
+from pharia_inference_sdk.core import (
     Llama3InstructModel,
     LuminousControlModel,
     NoOpTracer,

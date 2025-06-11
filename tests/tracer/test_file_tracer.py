@@ -4,8 +4,8 @@ from unittest.mock import Mock
 import pytest
 from pytest import fixture
 
-from core.task import Task
-from core.tracer import (
+from pharia_inference_sdk.core.task import Task
+from pharia_inference_sdk.core.tracer import (
     FileTracer,
     InMemoryTaskSpan,
     TracerLogEntryFailed,

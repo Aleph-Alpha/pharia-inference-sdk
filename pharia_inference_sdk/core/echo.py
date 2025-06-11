@@ -4,9 +4,9 @@ from typing import NewType
 from aleph_alpha_client import Prompt, Text
 from pydantic import BaseModel
 
-from core.model import AlephAlphaModel
-from core.task import Task, Token
-from core.tracer.tracer import TaskSpan
+from pharia_inference_sdk.core.model import AlephAlphaModel
+from pharia_inference_sdk.core.task import Task, Token
+from pharia_inference_sdk.core.tracer.tracer import TaskSpan
 
 LogProb = NewType("LogProb", float)
 

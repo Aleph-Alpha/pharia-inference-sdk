@@ -2,7 +2,7 @@ from collections.abc import Sequence
 from datetime import datetime
 from typing import Generic, Optional, TypeVar
 
-from core.tracer.tracer import (
+from pharia_inference_sdk.core.tracer.tracer import (
     Context,
     ExportedSpan,
     PydanticSerializable,

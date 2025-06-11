@@ -49,14 +49,14 @@ default-groups = ["test"]
 
 [tool.setuptools]
 packages = [
-    { include = "core" }
+    { include = "pharia_inference_sdk" }
 ]
 
 [tool.hatch.build.targets.sdist]
-include = ["core"]
+include = ["pharia_inference_sdk"]
 
 [tool.hatch.build.targets.wheel]
-include = ["core"]
+include = ["pharia_inference_sdk"]
 
 [build-system]
 requires = ["hatchling"]

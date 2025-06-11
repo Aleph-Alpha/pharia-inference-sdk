@@ -6,12 +6,12 @@ from aleph_alpha_client import CompletionResponse, Prompt, Text, Tokens
 from aleph_alpha_client.completion import CompletionResult
 from pytest import fixture
 
-from connectors.limited_concurrency_client import (
+from pharia_inference_sdk.connectors.limited_concurrency_client import (
     AlephAlphaClientProtocol,
 )
-from core import MAX_CONCURRENCY, NoOpTracer, Task, TaskSpan, Token
-from core.echo import Echo, EchoInput, TokenWithLogProb
-from core.model import (
+from pharia_inference_sdk.core import MAX_CONCURRENCY, NoOpTracer, Task, TaskSpan, Token
+from pharia_inference_sdk.core.echo import Echo, EchoInput, TokenWithLogProb
+from pharia_inference_sdk.core.model import (
     AlephAlphaModel,
     CompleteInput,
     CompleteOutput,

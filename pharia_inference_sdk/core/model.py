@@ -20,17 +20,17 @@ from aleph_alpha_client import (
 from pydantic import BaseModel, ConfigDict
 from tokenizers import Encoding, Tokenizer  # type: ignore
 
-from connectors.limited_concurrency_client import (
+from pharia_inference_sdk.connectors.limited_concurrency_client import (
     AlephAlphaClientProtocol,
     LimitedConcurrencyClient,
 )
-from core.prompt_template import (
+from pharia_inference_sdk.core.prompt_template import (
     PromptTemplate,
     RichPrompt,
     TextCursor,
 )
-from core.task import Task, Token
-from core.tracer.tracer import TaskSpan, Tracer
+from pharia_inference_sdk.core.task import Task, Token
+from pharia_inference_sdk.core.tracer.tracer import TaskSpan, Tracer
 
 
 class CompleteInput(BaseModel, CompletionRequest, frozen=True):

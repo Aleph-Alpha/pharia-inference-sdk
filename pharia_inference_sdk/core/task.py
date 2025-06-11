@@ -5,7 +5,11 @@ from typing import Generic, TypeVar, final
 
 from pydantic import BaseModel
 
-from core.tracer.tracer import PydanticSerializable, TaskSpan, Tracer
+from pharia_inference_sdk.core.tracer.tracer import (
+    PydanticSerializable,
+    TaskSpan,
+    Tracer,
+)
 
 
 class Token(BaseModel):

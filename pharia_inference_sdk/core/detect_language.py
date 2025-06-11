@@ -7,8 +7,8 @@ from lingua import Language as LinguaLanguage
 from pycountry import languages
 from pydantic import BaseModel
 
-from core.task import Task
-from core.tracer.tracer import TaskSpan
+from pharia_inference_sdk.core.task import Task
+from pharia_inference_sdk.core.tracer.tracer import TaskSpan
 
 
 class LanguageNotSupportedError(ValueError):

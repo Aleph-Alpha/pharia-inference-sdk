@@ -8,7 +8,7 @@ from opentelemetry.trace import StatusCode, set_span_in_context
 from opentelemetry.trace import Tracer as OpenTTracer
 from pydantic import BaseModel, SerializeAsAny
 
-from core.tracer.tracer import (
+from pharia_inference_sdk.core.tracer.tracer import (
     Context,
     ExportedSpan,
     JsonSerializer,

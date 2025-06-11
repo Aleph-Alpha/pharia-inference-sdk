@@ -1,7 +1,7 @@
 import pytest
 from lingua import Language as LinguaLanguage
 
-from core import (
+from pharia_inference_sdk.core import (
     DetectLanguage,
     DetectLanguageInput,
     Language,
