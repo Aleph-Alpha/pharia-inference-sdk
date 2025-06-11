@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/Aleph-Alpha/pharia-inference-sdk/compare/v0.1.2...v0.1.3) (2025-06-11)
+
+
+### Documentation
+
+* tidy up markdown files ([#20](https://github.com/Aleph-Alpha/pharia-inference-sdk/issues/20)) ([18d60c0](https://github.com/Aleph-Alpha/pharia-inference-sdk/commit/18d60c0cee83d0257be9b4e3bbfee2223b7a4e5a))
+
 ## [0.1.2](https://github.com/Aleph-Alpha/pharia-inference-sdk/compare/v0.1.1...v0.1.2) (2025-06-11)
 
 
