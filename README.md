@@ -4,10 +4,10 @@ Formally the `intelligence_layer/core` package.
 
 ## Overview
 
-The pharia-inference-sdk provides essential functionality for the intelligence layer. TBD
+The pharia-inference-sdk provides essential functionality for the intelligence layer.
 
 ## Installation
-The SDK is published on [PyPI](#).
+The SDK is published on [PyPI](https://pypi.org/project/pharia-inference-sdk/).
 
 To add the SDK as a dependency to an existing project managed, run
 ```bash
