@@ -9,9 +9,21 @@
 ### Local Development Setup
 
 ```bash
+git clone https://github.com/pharia-ai/pharia-inference-sdk.git
+cd pharia-inference-sdk
+```
+
+####  Install dependencies
+```bash
 uv venv
 uv sync
 uv run pre-commit install
+```
+
+#### Setup environment variables
+
+```bash
+cp .env.example .env
 ```
 
 ### Running Tests
@@ -23,16 +35,3 @@ docker compose up -d
 # run tests
 uv run pytest
 ```
-
-## Development Roadmap
-
-### TODO
-- [ ] Add build step 
-- [ ] add docs
-- [ ] Figure out what to do with `LimitedConcurrencyClient`
-- [ ] setup renovatebot 
-- [ ] setup CI/CD 
-   - [ ] Add release-please 
-
-## Code Quality
-- [x] Ruff linting is enabled for code quality checks 
