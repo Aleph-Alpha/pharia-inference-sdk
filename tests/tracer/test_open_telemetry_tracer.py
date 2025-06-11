@@ -17,7 +17,7 @@ from opentelemetry.sdk.trace.export import (
 )
 from pytest import fixture
 
-from core import OpenTelemetryTracer, SpanType, Task
+from pharia_inference_sdk.core import OpenTelemetryTracer, SpanType, Task
 
 
 class DummyExporter(SpanExporter):

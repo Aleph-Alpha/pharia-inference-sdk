@@ -11,15 +11,15 @@ from aleph_alpha_client import (
 )
 from pydantic import BaseModel
 
-from core.model import AlephAlphaModel, ExplainInput, ExplainOutput
-from core.prompt_template import (
+from pharia_inference_sdk.core.model import AlephAlphaModel, ExplainInput, ExplainOutput
+from pharia_inference_sdk.core.prompt_template import (
     Cursor,
     PromptRange,
     RichPrompt,
     TextCursor,
 )
-from core.task import Task
-from core.tracer.tracer import TaskSpan
+from pharia_inference_sdk.core.task import Task
+from pharia_inference_sdk.core.tracer.tracer import TaskSpan
 
 
 class TextHighlightInput(BaseModel):

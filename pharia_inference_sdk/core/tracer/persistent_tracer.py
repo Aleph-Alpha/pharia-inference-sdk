@@ -6,13 +6,13 @@ from uuid import UUID, uuid4
 
 from pydantic import BaseModel, SerializeAsAny
 
-from core.tracer.in_memory_tracer import (
+from pharia_inference_sdk.core.tracer.in_memory_tracer import (
     InMemorySpan,
     InMemoryTaskSpan,
     InMemoryTracer,
     LogEntry,
 )
-from core.tracer.tracer import (
+from pharia_inference_sdk.core.tracer.tracer import (
     Context,
     ExportedSpan,
     PydanticSerializable,

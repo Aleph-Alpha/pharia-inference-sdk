@@ -3,7 +3,7 @@ from pathlib import Path
 
 from pytest import fixture
 
-from core import FileTracer, InMemoryTracer, Task, TaskSpan
+from pharia_inference_sdk.core import FileTracer, InMemoryTracer, Task, TaskSpan
 
 
 class TracerTestSubTask(Task[None, None]):

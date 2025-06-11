@@ -5,7 +5,7 @@ from collections.abc import Iterator
 
 import pytest
 
-from core import (
+from pharia_inference_sdk.core import (
     ErrorValue,
     InMemorySpan,
     InMemoryTaskSpan,

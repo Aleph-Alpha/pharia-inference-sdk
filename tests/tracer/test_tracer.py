@@ -4,7 +4,7 @@ import pytest
 from pydantic import BaseModel
 from pytest import fixture
 
-from core.tracer import (
+from pharia_inference_sdk.core.tracer import (
     CompositeTracer,
     FileTracer,
     InMemoryTracer,

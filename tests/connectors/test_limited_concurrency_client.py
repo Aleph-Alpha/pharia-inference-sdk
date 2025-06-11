@@ -8,7 +8,7 @@ import pytest
 from aleph_alpha_client import BusyError, CompletionRequest, CompletionResponse, Prompt
 from pytest import fixture
 
-from connectors.limited_concurrency_client import (
+from pharia_inference_sdk.connectors.limited_concurrency_client import (
     AlephAlphaClientProtocol,
     LimitedConcurrencyClient,
 )

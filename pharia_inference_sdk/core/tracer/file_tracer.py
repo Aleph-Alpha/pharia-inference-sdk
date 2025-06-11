@@ -6,14 +6,14 @@ from uuid import UUID
 
 from pydantic import BaseModel
 
-from core.tracer.in_memory_tracer import InMemoryTracer
-from core.tracer.persistent_tracer import (
+from pharia_inference_sdk.core.tracer.in_memory_tracer import InMemoryTracer
+from pharia_inference_sdk.core.tracer.persistent_tracer import (
     LogLine,
     PersistentSpan,
     PersistentTaskSpan,
     PersistentTracer,
 )
-from core.tracer.tracer import Context, PydanticSerializable
+from pharia_inference_sdk.core.tracer.tracer import Context, PydanticSerializable
 
 
 class FileTracer(PersistentTracer):

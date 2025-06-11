@@ -10,7 +10,7 @@ from aleph_alpha_client import (
 )
 from pytest import fixture, raises
 
-from core import (
+from pharia_inference_sdk.core import (
     AlephAlphaModel,
     ControlModel,
     ExplainInput,

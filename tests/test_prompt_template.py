@@ -5,7 +5,7 @@ from aleph_alpha_client.prompt import Image, PromptItem, Text, Tokens
 from liquid.exceptions import LiquidSyntaxError, LiquidTypeError
 from pytest import raises
 
-from core.prompt_template import (
+from pharia_inference_sdk.core.prompt_template import (
     PromptItemCursor,
     PromptRange,
     PromptTemplate,

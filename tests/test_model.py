@@ -12,8 +12,10 @@ from aleph_alpha_client import (
 )
 from pytest import fixture
 
-from connectors.limited_concurrency_client import AlephAlphaClientProtocol
-from core import (
+from pharia_inference_sdk.connectors.limited_concurrency_client import (
+    AlephAlphaClientProtocol,
+)
+from pharia_inference_sdk.core import (
     AlephAlphaModel,
     CompleteInput,
     ControlModel,
@@ -25,8 +27,8 @@ from core import (
     NoOpTracer,
     Pharia1ChatModel,
 )
-from core.model import _cached_context_size, _cached_tokenizer
-from core.prompt_template import PromptRange, PromptTemplate
+from pharia_inference_sdk.core.model import _cached_context_size, _cached_tokenizer
+from pharia_inference_sdk.core.prompt_template import PromptRange, PromptTemplate
 
 INSTRUCTION = "Who likes pizza?"
 INPUT = "Marc and Jessica had pizza together. However, Marc hated it. He only agreed to the date because Jessica likes pizza so much."
