@@ -18,10 +18,11 @@ from pharia_inference_sdk.core import (
     Pharia1ChatModel,
 )
 
+load_dotenv()
+
 
 @fixture(scope="session")
 def token() -> str:
-    load_dotenv()
     token = getenv("AA_TOKEN")
     assert isinstance(token, str)
     return token
