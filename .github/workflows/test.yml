@@ -53,3 +53,23 @@ jobs:
         env:
           AA_TOKEN: ${{ secrets.AA_TOKEN }}
           CLIENT_URL: "https://inference-api.product.pharia.com"
+  notebooks:
+    timeout-minutes: 5
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@f0ec1fc3b38f5e7cd731bb6ce540c5af426746bb
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version-file: "pyproject.toml"
+      - name: Install dependencies
+        run: uv sync --dev
+      - name: Run notebooks
+        run: |
+          find documentation -name "*.ipynb" ! -name "performance_tips.ipynb" -exec uv run jupyter nbconvert --to notebook --execute {} \;
+          find documentation -name "*.nbconvert.ipynb" -type f -delete
+        env:
+          AA_TOKEN: ${{ secrets.AA_TOKEN }}
+          CLIENT_URL: "https://inference-api.product.pharia.com"
