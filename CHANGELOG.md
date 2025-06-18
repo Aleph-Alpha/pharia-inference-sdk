@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.4](https://github.com/Aleph-Alpha/pharia-inference-sdk/compare/v0.1.3...v0.1.4) (2025-06-18)
+
+
+### Documentation
+
+* add documentation notebooks ([#27](https://github.com/Aleph-Alpha/pharia-inference-sdk/issues/27)) ([111368b](https://github.com/Aleph-Alpha/pharia-inference-sdk/commit/111368bd4fdc1bf46b44c8078e713510f5463c66))
+* fix typo and links in README.md ([4a98bf0](https://github.com/Aleph-Alpha/pharia-inference-sdk/commit/4a98bf02f202c402ce84b7bde23aa4d9ae921be6))
+
 ## [0.1.3](https://github.com/Aleph-Alpha/pharia-inference-sdk/compare/v0.1.2...v0.1.3) (2025-06-11)
 
 
