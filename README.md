@@ -18,16 +18,18 @@ pip install pharia-inference-sdk
 
 ```python
 from pharia_inference_sdk.core.tracer import InMemoryTracer
-from pharia_inference_sdk.core.model import Llama3InstructModel
-from pharia_inference_sdk.connectors import LimitedConcurrencyClient
+from pharia_inference_sdk.core.model import Llama3InstructModel, Prompt, CompleteInput
+from aleph_alpha_client import Client
 
-client = LimitedConcurrencyClient()
+client=Client(token="<token>", host="<inference-api-url>")
 model = Llama3InstructModel(client=client)
 tracer = InMemoryTracer()
 
-prompt = "Hello, world!"
+prompt = Prompt.from_text(text="What is the most common fish in swedish lakes?")
+model.complete(CompleteInput(prompt=prompt, maximum_tokens=32), tracer)
 
-model.generate(prompt, tracer)
+# see trace in rich format
+tracer._rich_render_()
 ```
 
 ## Contributing
