@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.5](https://github.com/Aleph-Alpha/pharia-inference-sdk/compare/v0.1.4...v0.1.5) (2025-06-19)
+
+
+### Documentation
+
+* fix the usage code example ([44ea4f6](https://github.com/Aleph-Alpha/pharia-inference-sdk/commit/44ea4f691ff049362bb43a7d0c0e3fbf14a09807))
+
 ## [0.1.4](https://github.com/Aleph-Alpha/pharia-inference-sdk/compare/v0.1.3...v0.1.4) (2025-06-18)
 
 
