@@ -27,6 +27,7 @@ test = [
     "pytest>=8.3",
     "pytest-xdist>=3.6.1",
     "pytest-asyncio>=0.26.0",
+    "python-dotenv>=1.1.0,<2",
 ]
 dev = [
     "ruff>=0.11.13",
@@ -42,7 +43,6 @@ dev = [
     "types-psutil>=7.0.0.20250601",
     "types-python-dateutil>=2.9.0.20250516",
     "types-tqdm>=4.67.0.20250516",
-    "python-dotenv>=1.1.0,<2",
 ]
 docs = [
     "sphinx>=7.0.0,<8.0.0",
