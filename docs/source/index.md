@@ -1,17 +1,16 @@
-# Pharia Studio SDK
+# Pharia Inference SDK
 
 Welcome to the Pharia Inference SDK 👋
 
-The pharia-inference-sdk provides essential functionality for the intelligence layer.
-
 ## Getting Started
 
-Ready to start using the Pharia Inference SDK? Check out our [Quick Start Guide](01-quickstart) for installation instructions and basic usage examples.
-
-## Documentation
+- **New to the Pharia Inference SDK?** Start with the {doc}`02-core_concepts` to understand our architecture and key concepts.
+- **Ready to build?** Check out the {doc}`01-quickstart` to get up and running in minutes.
+- **Need detailed API information?** Explore our comprehensive {doc}`references` for all classes and methods.
 
 ```{toctree}
 :maxdepth: 2
+:hidden:
 
 01-quickstart
 02-core_concepts
@@ -22,9 +21,3 @@ references
 
 - **GitHub Repository**: [https://github.com/Aleph-Alpha/pharia-inference-sdk](https://github.com/Aleph-Alpha/pharia-inference-sdk)
 - **PyPI Package**: [https://pypi.org/project/pharia-inference-sdk/](https://pypi.org/project/pharia-inference-sdk/)
-
-## Indices and tables
-
-* {ref}`genindex`
-* {ref}`modindex`
-* {ref}`search`
