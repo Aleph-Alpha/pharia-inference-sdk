@@ -33,7 +33,7 @@ class Task(ABC, Generic[Input, Output]):
 
 The signatures of the `do_run` and `run` methods differ only in the [tracing](#trace) parameters.
 
-### Levels of abstraction
+## Levels of abstraction
 
 Even though the concept is generic, the main purpose for a task is of course to make use of an LLM for the transformation. Tasks are defined at different levels of abstraction. Higher level tasks (also called use cases) reflect a typical user problem, whereas lower level tasks are used to interface with an LLM on a generic or technical level.
 
@@ -47,14 +47,14 @@ Examples of lower level tasks might be the following:
 - Let the model generate text based on an instruction and some context: `Instruct: (Context, Instruction) -> Completion`
 - Chunk a text in smaller pieces at optimized boundaries (typically to make it fit into an LLM's context-size): `Chunk: Text -> [Chunk]`
 
-### Composability
+## Composability
 
 Typically you build higher level tasks from lower level tasks. Given a task, you can draw a dependency graph that illustrates which subtasks it is using and in turn which subtasks they are using. This graph typically forms a hierarchy or, more generally, a directed acyclic graph. The following drawing shows this graph for the Intelligence Layer's `RecursiveSummarize` task:
 
 ![Studio Recursive Summary](../_static/assets/studio-recursive-summary.drawio.svg)
 
 (trace)=
-### Trace
+## Trace
 
 A task implements a workflow. It processes its input, passes it on to subtasks, processes the outputs of the subtasks, and builds its own output. This workflow can be represented in a trace. For this, a task's `run` method takes a `Tracer` that takes care of storing details on the steps of this workflow, including the tasks that have been invoked along with their input and output and timing information.
 
