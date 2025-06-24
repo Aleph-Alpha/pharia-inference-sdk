@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.6](https://github.com/Aleph-Alpha/pharia-inference-sdk/compare/v0.1.5...v0.1.6) (2025-06-23)
+
+
+### Documentation
+
+* generate read the docs ([#34](https://github.com/Aleph-Alpha/pharia-inference-sdk/issues/34)) ([c872f50](https://github.com/Aleph-Alpha/pharia-inference-sdk/commit/c872f50314128a5de60c9740ab068af32c8d07f2))
+* Update author to Engineering ([0d8d64b](https://github.com/Aleph-Alpha/pharia-inference-sdk/commit/0d8d64be056e1f1f7eaff56767016e4feeb65614))
+
 ## [0.1.5](https://github.com/Aleph-Alpha/pharia-inference-sdk/compare/v0.1.4...v0.1.5) (2025-06-19)
 
 
